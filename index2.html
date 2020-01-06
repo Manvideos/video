@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style>
+			.box{
+				list-style: none;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				padding: 0px;
+			}
+			.box li{
+				color: aqua;
+				padding: 2px 10px;
+			}
+			.video{
+				box-sizing: border-box;
+				border: 1px solid #000;
+			}
+			p{
+				font-size: 16px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<iframe src="" width="100%" height="200px" class="video"></iframe>
+		<p>电影</p>
+		<ul class="box">
+			<li  data="https://jx.inpower.cc/?url=http://cn7.kankia.com/hls/20200102/9b15b6798ef65eaa61d05489b905c51e/1577949267/index.m3u8" onclick="arrs(1)">冰雪奇缘2</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn7.kankia.com/hls/20191221/c07d9e3c899887e67e852f296000ab8f/1576909865/index.m3u8" onclick="arrs(2)">叶问4:完结篇</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn7.kankia.com/hls/20191225/95d171c59b4c2695c4cc3e65e464ee89/1577251203/index.m3u8" onclick="arrs(3)">误杀2019(中文)</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn7.kankia.com/hls/20191221/3a762656c6b976f40a278dd96a1e7352/1576916089/index.m3u8" onclick="arrs(4)">星球大战:9</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn4.kankia.com/hls/20191220/bdf47e80fff171d4c849dc041d83466c/1576778287/index.m3u8" onclick="arrs(5)">天火(中文)</li>
+		</ul>
+		<p>庆余年</p>
+		<ul  class="box">
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/5b80956aae2ee3d6f1d8b3c08a621d8e/1576772292/index.m3u8" onclick="arrs(6)">34集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/965da83a216ee4cd2c5c07c2de7106b9/1576772932/index.m3u8" onclick="arrs(7)">35集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/d7bc020860d12f43157b8d7d289257bb/1576774293/index.m3u8" onclick="arrs(8)">36集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/15f859476ffa2659a22a34553c45652c/1576773629/index.m3u8" onclick="arrs(9)">37集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/11e8b18c54394bca7310b312dd93ce8c/1576774930/index.m3u8" onclick="arrs(10)">38集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/6face134b805c162536e1acc59679866/1576775577/index.m3u8" onclick="arrs(11)">39集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/545eab2e87327ddbb79c1626fd878b3a/1576776206/index.m3u8" onclick="arrs(12)">40集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/6c9061cd68c1b69c50dacff8f0f453b8/1576776857/index.m3u8" onclick="arrs(13)">41集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/949f6fb35b7fe5cee4a7851164c025ef/1576777481/index.m3u8" onclick="arrs(14)">42集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/223da575109810cba2d8d71b3ce6ab52/1576776843/index.m3u8" onclick="arrs(15)">43集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/bd636dc3c84dfbb218639f91199fabba/1576776144/index.m3u8" onclick="arrs(16)">44集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/c046cf9b2ab8e24014fb66256c8a1486/1576775998/index.m3u8" onclick="arrs(17)">45集</li>
+			<li  data="https://jx.inpower.cc/?url=http://cn1.kankia.com/hls/20191220/596ff11e1db2c3969da01367fc41d3b0/1576776716/index.m3u8" onclick="arrs(18)">46集</li>
+		</ul>
+	</body>
+	<script>
+		var lis= document.getElementsByTagName('li');
+		var video=document.getElementsByClassName('video')[0];
+		var str='';
+			function arrs(i){
+				var clj=lis[i-1].getAttribute('data');
+				video.src=clj
+			}
+		
+              
+		
+	</script>
+</html>
