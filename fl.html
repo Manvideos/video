@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style>
+			.box{
+				list-style: none;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				padding: 0px;
+			}
+			.box li{
+				color: aqua;
+				padding: 2px 10px;
+			}
+			.video{
+				box-sizing: border-box;
+				border: 1px solid #000;
+			}
+			p{
+				font-size: 16px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<video src="" width="100%" height="200px" class="video" autoplay="autoplay" controls="controls"></video>
+		<p>国产</p>
+		<ul class="box">
+			<li  data="https://play.jo931.site/20191213/89/892/892.mp4" onclick="arrs(1)">福利1</li>
+			<li  data="https://play.jo931.site/20191213/90/901/901.mp4" onclick="arrs(2)">福利2</li>
+			<li  data="https://play.jo931.site/20200101/89/892/892.mp4" onclick="arrs(3)">福利3</li>
+			<li  data="https://play.jo931.site/20200101/89/893/893.mp4" onclick="arrs(4)">福利4</li>
+			<li  data="https://play.jo931.site/20190801/89/893/893.mp4" onclick="arrs(5)">福利5</li>
+		</ul>
+		<p>岛国</p>
+		<ul  class="box">
+			<li  data="https://play.jo931.site/20191229/113/1131/1131.mp4" onclick="arrs(6)">福利1</li>
+			<li  data="https://play.jo931.site/20191230/111/1111/1111.mp4" onclick="arrs(7)">福利2</li>
+			<li  data="https://play.jo931.site/20191027/113/1131/1131.mp4" onclick="arrs(8)">福利3</li>
+			<li  data="https://play.jo931.site/20191105/113/1131/1131.mp4" onclick="arrs(9)">福利4</li>
+			<li  data="https://play.jo931.site/20191114/113/1131/1131.mp4" onclick="arrs(10)">福利5</li>
+		</ul>
+		<div style="display: flex;align-items: center;justify-content: space-around;color: red;">
+		<div><p>观看更多 + vx：A1001AX</p>
+		<p>观看更多 + vx：A1001AX</p>
+		<p>观看更多 + vx：A1001AX</p>
+		</div>
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1578307435025&di=d6f1a09cb90b30ee273b96c3e80a0ee6&imgtype=0&src=http%3A%2F%2Fwx3.sinaimg.cn%2Fbmiddle%2F006APoFYly1g19tolw031j30a4061wgj.jpg" alt="">
+	    </div>
+	</body>
+	<script>
+		var lis= document.getElementsByTagName('li');
+		var video=document.getElementsByClassName('video')[0];
+		var str='';
+			function arrs(i){
+				var clj=lis[i-1].getAttribute('data');
+				video.src=clj
+			}
+		
+              
+		
+	</script>
+</html>
